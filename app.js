@@ -33,44 +33,6 @@ app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(swaggerDocs));
  *    responses:
  *      '200':
  *        description: welcome my API
- * /profile:
- *  get:
- *    tags: [profile]
- *    summary: Returns Student Information
- *    description: Get response in url/profile
- *    responses:
- *      '200':
- *      description: My information
- * /profile/hobby:
- *  get:
- *    tags: [profile]
- *    summary: Return my hobby
- *    description: Get response in url/profile/hobby
- *    responses:
- *      '200':
- *      description: My hobby
- *  post:
- *    tags: [profile]
- *    summary: Create new student
- *    description: Create new student in url/profile/?ID=""&Name=""
- *    responses:
- *      '200':
- *      description: Create new Student, Success
- *  delete:
- *      tags: [profile]
- *      summary: Delete student
- *      description: Delete student in url/profile/... (... is ID)
- *      responses:
- *      '200':
- *       description: Deleted SUCCESSSSSSSSS !!!
- * /
- *  get:
- *      tags: [ID]
- *      summary: Input any number after /
- *      description: Input any number in url/... (any number) to get information
- *      responses:
- *      '200':
- *      description: Guess my ID
  */
 
 
