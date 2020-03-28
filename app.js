@@ -88,8 +88,8 @@ app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(swaggerDocs));
  *      required: true
  *      type: string
  *    responses:
- *      '405':
- *        description: Method not allowed (405)
+ *      '200':
+ *        description: YOUR ID
  */
 
 
