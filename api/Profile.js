@@ -18,6 +18,7 @@ router.post('/',(req,res,next)=>{
 });
 
 router.delete('/:id',(req,res,next) =>{
+    student_ID: req.params.id;
     res.send("Deleted Student have ID is " + req.params.id);
     res.send("SUCCESSSSSSSSSSSSSS !!!!!!!!!!!!!!!!!");
 })

@@ -49,7 +49,7 @@ app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(swaggerDocs));
  *    summary:Delete Student based on student's id
  *    description: Input student's id to delete in url/profile/.. (id)
  *    parameters:
- *    - name: Student_ID
+ *    - name: id
  *      description: Please enter Student id
  *      in: path
  *      required: true
