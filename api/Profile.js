@@ -11,7 +11,7 @@ router.get('/',(req,res,next) =>{
     }
     res.send(user);
 });
-router.post('/',(req,res,next)=>{
+router.post('/:id',(req,res,next)=>{
     res.send("SUCCESSSSSSSSSSSSSS !!!!!!!!!!!!!!!!!!!!!!!");
     res.send("The information you entered");
     res.send(req.query);
