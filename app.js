@@ -27,14 +27,13 @@ app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(swaggerDocs));
  * @swagger
  * /:
  *  get:
- *    tags: [/]
  *    summary: Returns main page status
  *    description: Get response in main page url/
  *    responses:
  *      '200':
  *        description: welcome my API
  * /profile:
- *    tags: [profile]
+ *   get:
  *    summary: Returns my profile
  *    description: Get response in url/profile
  *    response:
