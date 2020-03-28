@@ -78,6 +78,18 @@ app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(swaggerDocs));
  *        '200':
  *           description: My hobby here
  * /{id}:
+ *  post:
+ *    summary: input your ID
+ *    description: Get response in .../{id}
+ *    parameters:
+ *    - name: id
+ *      description: Please enter student id
+ *      in: path
+ *      required: true
+ *      type: string
+ *    responses:
+ *      '200':
+ *        description: THIS IS YOUR ID !!!!!!!
  */
 
 
