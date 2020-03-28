@@ -49,8 +49,8 @@ app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(swaggerDocs));
  *    summary:Delete Student based on student's id
  *    description: Input student's id to delete in url/profile/.. (id)
  *    parameters:
- *      name: Student's ID
- *      description: Please enter student's id
+ *    - name: Student_ID
+ *      description: Please enter Student id
  *      in: path
  *      required: true
  *      type: string
