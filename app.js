@@ -17,7 +17,7 @@ const swaggerOptions={
             servers: ["http://localhost:3000"]
         }
     },
-    apis: ["server.js"]
+    apis: ["app.js"]
 };
 
 const swaggerDocs=swaggerJsDoc(swaggerOptions);
