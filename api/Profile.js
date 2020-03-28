@@ -13,9 +13,18 @@ router.get('/',(req,res,next) =>{
 });
 router.post('/',(req,res,next)=>{
     res.send("SUCCESSSSSSSSSSSSSS !!!!!!!!!!!!!!!!!!!!!!!");
+    res.send("The information you entered");
+    res.send(req.query);
 });
+
+router.delete('/:id',(req,res,next) =>{
+    res.send("Deleted Student have ID is " + req.params.id);
+    res.send("SUCCESSSSSSSSSSSSSS !!!!!!!!!!!!!!!!!");
+})
 
 router.get('/hobby',(req,res,next)=>{
     res.send("MY HOBBY : PLAY GAME , WATCHING TV, LISTENING TO MUSIC, ALGORITHM, MATH, ...");
 })
+
+router.post()
 module.exports=router;
