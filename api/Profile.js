@@ -26,5 +26,4 @@ router.get('/hobby',(req,res,next)=>{
     res.send("MY HOBBY : PLAY GAME , WATCHING TV, LISTENING TO MUSIC, ALGORITHM, MATH, ...");
 })
 
-router.post()
 module.exports=router;
