@@ -47,17 +47,17 @@ app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(swaggerDocs));
  *      '200':
  *        description: YOUR STUDENT HAS BEEN ADDED
  *   delete:
- *    summary: Delete a specific location
- *    description: Get response in .../location/{locationid}
+ *    summary: Delete a student based on student's id
+ *    description: Get response in .../profile/{id}
  *    parameters:
  *    - name: id
- *      description: Please enter location id
+ *      description: Please enter student id
  *      in: path
  *      required: true
  *      type: string
  *    responses:
  *      '200':
- *        description: Show location_id were deleted
+ *        description: DELETED SUCCESSSSSSSS !!!!!!!!!!!!!!!!!
  * /profile/hobby:
  *  get:
  *      summary: Return my hobby
