@@ -57,7 +57,7 @@ app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(swaggerDocs));
  *      type: string
  *    responses:
  *      '200':
- *         description: DELETED SUCCESSSSSSS !!!!!!!!
+ *        description: DELETED SUCCESSSSSSSSSSSS !!!!!!!!!!!
  * /profile/hobby:
  *  get:
  *      summary: Return my hobby

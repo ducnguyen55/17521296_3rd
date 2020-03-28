@@ -17,12 +17,12 @@ router.post('/',(req,res,next)=>{
     res.send(req.query);
 });
 
-router.delete('/:id',(req,res,next) =>{
-    student_ID: req.params.id;
-    res.send("Deleted Student have ID is " + req.params.id);
-    res.send("SUCCESSSSSSSSSSSSSS !!!!!!!!!!!!!!!!!");
-})
-
+router.delete('/:id', (req, res, next) => {
+    res.status(200).json({
+        student_id: req.params.id,
+        message: 'DELETED SUCCESSSSSSSS !!!!!!!!!!!!!!!!!!'
+    });
+});
 router.get('/hobby',(req,res,next)=>{
     res.send("MY HOBBY : PLAY GAME , WATCHING TV, LISTENING TO MUSIC, ALGORITHM, MATH, ...");
 })
