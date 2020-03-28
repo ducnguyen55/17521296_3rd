@@ -45,6 +45,25 @@ app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(swaggerDocs));
  *    responses:
  *      '200':
  *        description: YOUR STUDENT HAS BEEN ADDED
+ *   delete:
+ *    summary:Delete Student based on student's id
+ *    description: Input student's id to delete in url/profile/.. (id)
+ *    parameters:
+ *    - name: Student's ID
+ *      description: Please enter student's id
+ *      in : path
+ *      required: true
+ *      type: string
+ *    responses:
+ *      '200':
+ *         description: DELETED SUCCESSSSSSS !!!!!!!!
+ * /profile/hobby
+ *  get:
+ *      summary: Return my hobby
+ *      description: Get response in url/profile/hobby
+ *      responses:
+ *        '200':
+ *           description: My hobby here
  */
 
 
