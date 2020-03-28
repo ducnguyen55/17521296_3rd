@@ -36,9 +36,15 @@ app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(swaggerDocs));
  *   get:
  *    summary: Returns my profile
  *    description: Get response in url/profile
- *    response:
+ *    responses:
  *      '200':
  *        description: My profile here
+ *   post:
+ *    summary: Create new student
+ *    description: Input new student in url/profile/?... (any information of student)
+ *    responses:
+ *      '200':
+ *        description: YOUR STUDENT HAS BEEN ADDED
  */
 
 
