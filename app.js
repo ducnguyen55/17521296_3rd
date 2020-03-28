@@ -33,6 +33,13 @@ app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(swaggerDocs));
  *    responses:
  *      '200':
  *        description: welcome my API
+ * /profile:
+ *    tags: [profile]
+ *    summary: Returns my profile
+ *    description: Get response in url/profile
+ *    response:
+ *      '200':
+ *        description: My profile here
  */
 
 
