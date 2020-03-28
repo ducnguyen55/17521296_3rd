@@ -58,6 +58,18 @@ app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(swaggerDocs));
  *    responses:
  *      '200':
  *        description: DELETED SUCCESSSSSSSS !!!!!!!!!!!!!!!!!
+ *   put:
+ *    summary: update student's information a student based on student's id
+ *    description: Get response in .../profile/{id}
+ *    parameters:
+ *    - name: id
+ *      description: Please enter student id
+ *      in: path
+ *      required: true
+ *      type: string
+ *    responses:
+ *      '200':
+ *        description: STUDENT'S INFORMATION UPDATED !!!!!!!!!!!
  * /profile/hobby:
  *  get:
  *      summary: Return my hobby
@@ -65,6 +77,7 @@ app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(swaggerDocs));
  *      responses:
  *        '200':
  *           description: My hobby here
+ * /{id}:
  */
 
 

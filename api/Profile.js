@@ -16,7 +16,12 @@ router.post('/',(req,res,next)=>{
     res.send("The information you entered");
     res.send(req.query);
 });
-
+router.put('/',(req,res,next)=>{
+    res.status(200).json({
+        student_id: req.params.id,
+        message: 'UPDATED SUCCESSSSSSSS !!!!!!!!!!!!!!!!!!'
+    });
+})
 router.delete('/:id', (req, res, next) => {
     res.status(200).json({
         student_id: req.params.id,
