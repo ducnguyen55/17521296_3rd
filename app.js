@@ -77,10 +77,10 @@ app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(swaggerDocs));
  *      responses:
  *        '200':
  *           description: My hobby here
- * /{id}:
+ * /id/{id}:
  *  post:
  *    summary: input your ID
- *    description: Get response in .../{id}
+ *    description: Get response in .../id/{id}
  *    parameters:
  *    - name: id
  *      description: Please enter student id
@@ -88,13 +88,15 @@ app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(swaggerDocs));
  *      required: true
  *      type: string
  *    responses:
- *      '200':
- *        description: THIS IS YOUR ID !!!!!!!
+ *      '405':
+ *        description: Method not allowed (405)
  */
 
 
 const ProfileRouter=require('./api/Profile');
 const HobbyRouter=require('./api/Hobby');
+
+
 app.use('/profile',ProfileRouter);
 app.use('/id',HobbyRouter);
 app.use(bodyParser.urlencoded({extended : false}))
